@@ -28,4 +28,9 @@ public abstract class InstrumentoMusical {
         System.out.println("Instrumento: "+nome);
         System.out.println("Seu material: "+material);
 }
+
+    String getnome() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+        
+    }
 }
