@@ -18,7 +18,7 @@ public class SaxofoneExercicio extends InstrumentoMusical {
     
     @Override
     public void tocar(){
-        System.out.println("Tocando jazz suave no "+super.getnome()+ " " +tipo+"...");
+        System.out.println("Tocando jazz suave no "+super.getnome()+ " " +getTipo()+"...");
         System.out.println("Melodia do saxofone... ");
     }
     
@@ -32,5 +32,12 @@ public class SaxofoneExercicio extends InstrumentoMusical {
     public void show(){
         super.show();
         System.out.println("Tipo: ");
+    }
+
+    /**
+     * @return the tipo
+     */
+    public String getTipo() {
+        return tipo;
     }
 }

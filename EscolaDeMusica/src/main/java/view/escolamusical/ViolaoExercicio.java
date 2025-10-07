@@ -18,7 +18,7 @@ public class ViolaoExercicio extends InstrumentoMusical {
     
     @Override
     public void tocar(){
-        System.out.println("Tocando suavemente o "+super.getnome()+" de "+numeroCordas+" cordas");
+        System.out.println("Tocando suavemente o "+super.getnome()+" de "+getNumeroCordas()+" cordas");
         System.out.println("Dedilhando uma melodia romantica no violao");
     
     }
@@ -26,12 +26,19 @@ public class ViolaoExercicio extends InstrumentoMusical {
     @Override
     public void afinar(){
         super.afinar();
-        System.out.println("Ajustando a tensão das "+numeroCordas+" cordas");
+        System.out.println("Ajustando a tensão das "+getNumeroCordas()+" cordas");
     }
     
     @Override
     public void show(){
         super.show();
-        System.out.println("Numero de cordas: "+numeroCordas);
+        System.out.println("Numero de cordas: "+getNumeroCordas());
+    }
+
+    /**
+     * @return the numeroCordas
+     */
+    public int getNumeroCordas() {
+        return numeroCordas;
     }
 }
