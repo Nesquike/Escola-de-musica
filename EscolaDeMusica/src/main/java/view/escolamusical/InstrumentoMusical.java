@@ -9,7 +9,7 @@ package view.escolamusical;
  *
  * @author luiz.gbrito
  */
-public class InstrumentoMusical {
+public abstract class InstrumentoMusical {
     protected String nome;
     protected String material;
     
